@@ -19,6 +19,7 @@ public class UndoCommand extends Command {
         }
 
         model.undoInternship();
+        model.updateFilteredApplicationList(Model.PREDICATE_SHOW_ALL_APPLICATIONS);
 
         return new CommandResult(MESSAGE_SUCCESS);
     }
