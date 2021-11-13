@@ -109,4 +109,18 @@ public class VersionedInternship extends Internship {
         currentStatePointer += amount;
     }
 
+    /**
+     * Prints the internshipStateList in a reader-friendly format
+     * Used for testing purpose only
+     * @return the internshipStateList in a reader-friendly format
+     */
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < internshipStateList.size(); i++) {
+            sb.append("Internship version " + i + "\n").append(internshipStateList.get(i)).append("\n");
+        }
+        return sb.toString();
+    }
+
 }

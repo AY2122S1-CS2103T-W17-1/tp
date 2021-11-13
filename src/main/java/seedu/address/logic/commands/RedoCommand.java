@@ -19,6 +19,7 @@ public class RedoCommand extends Command {
         }
 
         model.redoInternship();
+        model.updateFilteredApplicationList(Model.PREDICATE_SHOW_ALL_APPLICATIONS);
 
         return new CommandResult(MESSAGE_SUCCESS);
     }
